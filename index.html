@@ -823,6 +823,8 @@
   /* Slide 7 forced-choice table */
   .highlight-winner td { background: rgba(59,130,246,0.15); color: #3B82F6 !important; font-weight: 700; }
   .highlight-winner td:first-child { font-style: italic; }
+  .highlight-winner-green td { background: rgba(16,185,129,0.15); color: #10B981 !important; font-weight: 700; }
+  .highlight-winner-green td:first-child { font-style: italic; }
   .pair-group tr:last-child td { border-bottom: 2px solid rgba(255,255,255,0.1); }
 
   /* Responsive tweaks */
@@ -1308,7 +1310,7 @@
             </tr>
           </tbody>
           <tbody class="pair-group">
-            <tr class="highlight-winner">
+            <tr class="highlight-winner-green">
               <td>Feminism has created new problems for men and society</td>
               <td class="num">62%</td>
               <td class="num">62%</td>
@@ -1473,10 +1475,15 @@
       </div>
 
       <!-- Abortion -->
-      <div class="interp-card" style="flex:2; border-left:3px solid var(--text-dim); padding-left:14px;">
-        <strong style="color:var(--text-dim); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em;">Abortion</strong>
-        <div style="margin-top:8px; font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
-          Abortion support is broad for health risk, fetal malformation, and rape, but lower for elective circumstances. <strong style="color:var(--hnd);">Honduras</strong> is most restrictive across all items; <strong style="color:var(--arg);">Argentina</strong> is most permissive.
+      <div class="interp-card" style="flex:2; border-left:3px solid var(--accent-blue); padding-left:14px;">
+        <strong style="color:var(--accent-blue); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em;">Abortion</strong>
+        <div style="margin-top:8px; display:flex; flex-direction:column; gap:6px;">
+          <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.55;">
+            Support is high for medically grounded circumstances — <strong style="color:var(--text);">health risk (83%)</strong>, <strong style="color:var(--text);">fetal malformation (80%)</strong>, and <strong style="color:var(--text);">rape (76%)</strong> — but drops substantially for elective circumstances <strong style="color:var(--text);">(30%–46%)</strong>.
+          </div>
+          <div style="font-size:0.82rem; color:var(--text-dim); line-height:1.5; margin-top:2px;">
+            <strong style="color:var(--hnd);">Honduras</strong> is most restrictive across all items; <strong style="color:var(--arg);">Argentina</strong> is most permissive.
+          </div>
         </div>
       </div>
 
