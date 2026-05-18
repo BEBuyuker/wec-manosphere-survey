@@ -286,6 +286,25 @@
     font-style: italic;
   }
 
+  /* ── Compact overrides for data-heavy slides that would otherwise overflow ── */
+  .slide-compact { padding: 48px 80px !important; }
+  .slide-compact .slide-headline { padding-bottom: 10px; margin-bottom: 4px; }
+  .slide-compact .data-table { margin-top: 14px; }
+  .slide-compact .data-table td { padding: 5px 10px; font-size: 0.8rem; }
+  .slide-compact .data-table td:first-child { font-size: 0.8rem; }
+  .slide-compact .data-table th { padding: 6px 10px; }
+  .slide-compact .data-table td[colspan] { padding: 6px 10px !important; }
+  .slide-compact .data-table td.num { font-size: 0.75rem; }
+  .slide-compact .table-note { font-size: 0.65rem; margin-top: 8px; }
+  .slide-compact .stats-row { margin-top: 12px; }
+  .slide-compact .stat-number { font-size: 2.2rem !important; }
+  .slide-compact .stat-callout { padding: 8px 12px; }
+  .slide-compact .cards-row { margin-top: 10px; }
+  .slide-compact .interp-card { padding: 10px 14px; font-size: 0.82rem; }
+  .slide-compact .slide-note { margin-top: 6px; }
+  .slide-compact .strat-interp { margin-top: 8px; padding: 12px 18px; }
+  .slide-compact .section-label { margin-bottom: 12px; }
+
   /* Chart containers */
   .chart-slide-body {
     display: flex;
@@ -1125,7 +1144,7 @@
   </section>
 
   <!-- ===== SLIDE 6 — CONTENT EXPOSURE ===== -->
-  <section class="slide" id="slide-6" data-index="6">
+  <section class="slide slide-compact" id="slide-6" data-index="6">
     <div class="section-label reveal">06 — IDEAS IN CIRCULATION</div>
     <h2 class="slide-headline reveal reveal-delay-1">Manosphere-Adjacent Ideas Have Broader Reach Than Individual Figures</h2>
 
@@ -1202,7 +1221,7 @@
   </section>
 
   <!-- ===== SLIDE 7 — FORCED-CHOICE BATTERY ===== -->
-  <section class="slide slide--surface" id="slide-7" data-index="7">
+  <section class="slide slide--surface slide-compact" id="slide-7" data-index="7">
     <div class="section-label reveal">07 — FORCED-CHOICE BATTERY</div>
     <h2 class="slide-headline reveal reveal-delay-1">Forced Choices: Egalitarian Anchors, But Grievance Frames Have Pull</h2>
 
@@ -1370,11 +1389,11 @@
   </section>
 
   <!-- ===== SLIDE 8 — GENDER ATTITUDES ===== -->
-  <section class="slide" id="slide-8" data-index="8">
+  <section class="slide slide-compact" id="slide-8" data-index="8">
     <div class="section-label reveal">08 — GENDER ATTITUDES</div>
     <h2 class="slide-headline reveal reveal-delay-1">Gender Attitudes Are Mixed: Equality Norms Coexist With Traditional Views</h2>
 
-    <div class="strat-interp reveal reveal-delay-2" style="margin-bottom:20px; font-size:0.88rem;">
+    <div class="strat-interp reveal reveal-delay-2" style="margin-bottom:10px; font-size:0.85rem;">
       The gender-attitude picture is mixed: explicit male hierarchy is not dominant, but protective/family traditionalism and motherhood norms remain strong. Anti-violence norms are very strong, yet one in four still treats domestic violence as a private matter.
     </div>
 
@@ -1463,7 +1482,7 @@
       </table>
     </div>
 
-    <div class="cards-row reveal reveal-delay-4" style="margin-top:14px; gap:16px; align-items:flex-start;">
+    <div class="cards-row reveal reveal-delay-4" style="margin-top:10px; gap:16px; align-items:flex-start;">
 
       <!-- Violence -->
       <div class="interp-card" style="flex:1; border-left:3px solid var(--accent); padding-left:14px;">
