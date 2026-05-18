@@ -821,7 +821,8 @@
   .tbl-low  { color: #EF4444 !important; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 0.8rem; }
 
   /* Slide 7 forced-choice table */
-  .highlight-winner td { background: rgba(59,130,246,0.12); color: #3B82F6; font-weight: 600; }
+  .highlight-winner td { background: rgba(59,130,246,0.15); color: #3B82F6 !important; font-weight: 700; }
+  .highlight-winner td:first-child { font-style: italic; }
   .pair-group tr:last-child td { border-bottom: 2px solid rgba(255,255,255,0.1); }
 
   /* Responsive tweaks */
@@ -878,56 +879,59 @@
     <div class="section-label reveal">02 — METHODOLOGY</div>
     <h2 class="slide-headline reveal reveal-delay-1">Methodology</h2>
 
-    <!-- Country sample cards -->
-    <div class="reveal reveal-delay-2" style="display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:32px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:28px; align-items:start;">
 
-      <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.3); border-top:4px solid var(--arg); border-radius:10px; padding:24px 20px; display:flex; flex-direction:column; align-items:center; gap:8px;">
-        <div style="font-family:'Space Mono',monospace; font-size:0.65rem; letter-spacing:0.14em; color:var(--arg); text-transform:uppercase;">Argentina</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:3rem; color:var(--arg); line-height:1;">1,022</div>
-        <div style="font-size:0.75rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
-      </div>
+      <!-- LEFT: Country cards 2×2 -->
+      <div class="reveal reveal-delay-2" style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
 
-      <div style="background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.3); border-top:4px solid var(--col); border-radius:10px; padding:24px 20px; display:flex; flex-direction:column; align-items:center; gap:8px;">
-        <div style="font-family:'Space Mono',monospace; font-size:0.65rem; letter-spacing:0.14em; color:var(--col); text-transform:uppercase;">Colombia</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:3rem; color:var(--col); line-height:1;">1,178</div>
-        <div style="font-size:0.75rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
-      </div>
+        <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.3); border-top:4px solid var(--arg); border-radius:10px; padding:22px 16px; display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.14em; color:var(--arg); text-transform:uppercase;">Argentina</div>
+          <div style="font-family:'DM Serif Display',serif; font-size:2.8rem; color:var(--arg); line-height:1;">1,022</div>
+          <div style="font-size:0.72rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
+        </div>
 
-      <div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); border-top:4px solid var(--chl); border-radius:10px; padding:24px 20px; display:flex; flex-direction:column; align-items:center; gap:8px;">
-        <div style="font-family:'Space Mono',monospace; font-size:0.65rem; letter-spacing:0.14em; color:var(--chl); text-transform:uppercase;">Chile</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:3rem; color:var(--chl); line-height:1;">967</div>
-        <div style="font-size:0.75rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
-      </div>
+        <div style="background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.3); border-top:4px solid var(--col); border-radius:10px; padding:22px 16px; display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.14em; color:var(--col); text-transform:uppercase;">Colombia</div>
+          <div style="font-family:'DM Serif Display',serif; font-size:2.8rem; color:var(--col); line-height:1;">1,178</div>
+          <div style="font-size:0.72rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
+        </div>
 
-      <div style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-top:4px solid var(--hnd); border-radius:10px; padding:24px 20px; display:flex; flex-direction:column; align-items:center; gap:8px;">
-        <div style="font-family:'Space Mono',monospace; font-size:0.65rem; letter-spacing:0.14em; color:var(--hnd); text-transform:uppercase;">Honduras</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:3rem; color:var(--hnd); line-height:1;">352</div>
-        <div style="font-size:0.75rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
-      </div>
+        <div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); border-top:4px solid var(--chl); border-radius:10px; padding:22px 16px; display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.14em; color:var(--chl); text-transform:uppercase;">Chile</div>
+          <div style="font-family:'DM Serif Display',serif; font-size:2.8rem; color:var(--chl); line-height:1;">967</div>
+          <div style="font-size:0.72rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
+        </div>
 
-    </div>
+        <div style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-top:4px solid var(--hnd); border-radius:10px; padding:22px 16px; display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.14em; color:var(--hnd); text-transform:uppercase;">Honduras</div>
+          <div style="font-family:'DM Serif Display',serif; font-size:2.8rem; color:var(--hnd); line-height:1;">352</div>
+          <div style="font-size:0.72rem; color:var(--text-dim); letter-spacing:0.06em;">respondents</div>
+        </div>
 
-    <!-- Total -->
-    <div class="reveal reveal-delay-3" style="margin-top:18px; text-align:center; font-family:'Space Mono',monospace; font-size:0.78rem; color:var(--text-dim); letter-spacing:0.1em;">
-      TOTAL N = <strong style="color:var(--text); font-size:1rem;">3,519</strong> &nbsp;·&nbsp; April 27 – May 2, 2026 &nbsp;·&nbsp; Online panel
-    </div>
-
-    <div class="cards-row reveal reveal-delay-4" style="margin-top:24px; gap:16px;">
-      <div class="card" style="flex:1;">
-        <div class="card-body">
-          Weighted by country to age, gender, past reported vote, and WVS political/attitudinal benchmarks.
+        <!-- Total row spanning full width -->
+        <div style="grid-column:1/-1; text-align:center; font-family:'Space Mono',monospace; font-size:0.75rem; color:var(--text-dim); letter-spacing:0.1em; padding-top:4px;">
+          TOTAL N = <strong style="color:var(--text); font-size:0.95rem;">3,519</strong> &nbsp;·&nbsp; April 27 – May 2, 2026 &nbsp;·&nbsp; Online panel
         </div>
       </div>
-      <div class="card" style="flex:1;">
-        <div class="card-body">
-          Online panel sample skews toward higher-education respondents; education remains a limitation.
+
+      <!-- RIGHT: Study description + methodology notes -->
+      <div class="reveal reveal-delay-3" style="display:flex; flex-direction:column; gap:16px; padding-top:4px;">
+        <div style="font-size:0.95rem; color:var(--text-muted); line-height:1.65;">
+          This survey establishes a descriptive baseline of manosphere exposure, masculinity beliefs, gender-role attitudes, political attitudes, and social media influence among adults in Argentina, Colombia, Chile, and Honduras to inform Phase 2 message testing.
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:4px;">
+          <div class="card" style="padding:14px 16px;">
+            <div class="card-body" style="font-size:0.83rem;">Weighted by country to age, gender, past reported vote, and WVS political/attitudinal benchmarks.</div>
+          </div>
+          <div class="card" style="padding:14px 16px;">
+            <div class="card-body" style="font-size:0.83rem;">Online panel sample skews toward higher-education respondents; education remains a limitation.</div>
+          </div>
+          <div class="card" style="padding:14px 16px;">
+            <div class="card-body" style="font-size:0.83rem;">Honduras (n=352) is directional — interpret country-specific patterns with caution.</div>
+          </div>
         </div>
       </div>
-      <div class="card" style="flex:1;">
-        <div class="card-body">
-          Honduras (n=352) is directional — interpret country-specific patterns with caution.
-        </div>
-      </div>
+
     </div>
   </section>
 
@@ -1537,7 +1541,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Democracy is absolutely essential</td>
+            <td>It is absolutely important to live in a country that is governed democratically</td>
             <td class="num">56%</td>
             <td class="highlight-amber">67%</td>
             <td class="num">54%</td>
@@ -1545,7 +1549,7 @@
             <td class="num">63%</td>
           </tr>
           <tr>
-            <td>Trust most people</td>
+            <td>Most people can be trusted</td>
             <td class="num">14%</td>
             <td class="num">16%</td>
             <td class="num">12%</td>
@@ -1553,7 +1557,7 @@
             <td class="num">11%</td>
           </tr>
           <tr>
-            <td>Half or more politicians corrupt</td>
+            <td>Half or more politicians are involved in corruption</td>
             <td class="num">72%</td>
             <td class="num">72%</td>
             <td class="highlight-amber">80%</td>
